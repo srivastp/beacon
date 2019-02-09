@@ -1,8 +1,17 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-
 import './App.css';
+import Stories from '../stories/Stories';
 
+
+const App = ({ stories }) =>
+  <div className="app">
+    <Stories stories={stories} />
+  </div>
+
+export default App;
+
+/*
 class App extends Component {
   render() {
     return (
@@ -25,5 +34,4 @@ class App extends Component {
     );
   }
 }
-
-export default App;
+*/
